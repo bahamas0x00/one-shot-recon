@@ -1,20 +1,20 @@
 ## Subdomain enum and bruteforce
-subfinder 
-shuffledns
+- subfinder   
+- shuffledns
 
 ## subdomain resolve and get ips
-puredns 
-dnsx
+- puredns   
+- dnsx
 
 ## HTTP server enumeration
-tew
-httpx
-nmap
+- tew  
+- httpx  
+- nmap  
 
 
 ## HTTP Crawling
-gospider 
+- gospider   
 
 
 ## Javascript Scraping
-httpx 
+- httpx   
