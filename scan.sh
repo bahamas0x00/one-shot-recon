@@ -29,10 +29,7 @@ sleep 3
 # DNS Enumeration - Find Subdomains
 cat "$scan_path/roots.txt" | subfinder | anew subs.txt
 
-while read line
-do
-    shuffledns -d $line -w "$ppath/lists/subdomains.txt" -r "$ppath/lists/resolvers.txt" -mode bruteforce | anew subs.txt
-done < "$scan_path/roots.txt"
+shuffledns -l  "$scan_path/roots.txt"  -w "$ppath/lists/subdomains.txt" -r "$ppath/lists/resolvers.txt" -mode bruteforce | anew subs.txt
 
 
 # DNS Resolution - Resolve Discoverd Subdomains
